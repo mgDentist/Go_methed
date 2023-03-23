@@ -104,7 +104,6 @@ iframe {
   bottom: 0;
   background-image: url("../img/boy-vr.png");
   background-repeat: no-repeat;
-  z-index: -1;
 }
 
 .greetings-subtitle{
@@ -166,6 +165,26 @@ iframe {
   padding: 275px 477px;
 }
 
+.about-us__container {
+  padding: 0 25px;
+}
+
+.about-us__image-container {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.about-us__image {
+  display: block;
+}
+
+.about-us__description-wrapper {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin-bottom: 48px;
+}
+
 .about-us__description {
   font-weight: 400;
   font-size: 20px;
@@ -174,20 +193,40 @@ iframe {
   margin-bottom: 30px;
 }
 
-.about-us__description-second {
-  margin-bottom: 70px;
+.description-second {
+  margin-bottom: 48px;
 }
 
 .about-us__description-third {
+  position: relative;
   font-weight: 400;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
+  padding-left: 31px;
 }
 
-.about-us__quotes {
+.about-us__description-third::before {
+  content: "“";
+  position: absolute;
+  width: 22px;
+  height: 19px;
+  left: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  color: #6C0287;
+}
+
+.about-us__description-third::after {
+  content: "„";
+  position: absolute;
+  width: 22px;
+  height: 19px;
+  bottom: 55px;
+  right: 115px;
   font-weight: 900;
   font-size: 44px;
   line-height: 50px;
@@ -199,22 +238,26 @@ iframe {
 }
 
 .about-us__bloquote {
+  display: inline-block;
+  width: 500px;
   margin: 0;
 }
 
 .about-us__picture {
+  display: inline-block;
   margin: 0;
-  margin-left: 780px;
+  margin-left: 100px;
 }
 
 .about-us__img {
   display: inline-block;
+  vertical-align: bottom;
+  margin-right: 30px;
 }
 
 .about-us__cite {
   display: inline-block;
   width: 280px;
-  margin-left: 30px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
