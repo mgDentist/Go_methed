@@ -106,14 +106,15 @@ iframe {
   margin-left: 60px;
 }
 
-.greetings-section {
+.greetings-section__container {
   position: relative;
+  max-width: 1180px;
   min-height: 1018px;
   padding-top: 146px;
+  margin: 0 auto;
 }
 
 .greetings-title {
-  position: relative;
   margin: 0;
   font-weight: 900;
   font-size: 150px;
@@ -121,7 +122,7 @@ iframe {
   letter-spacing: -0.1em;
 }
 
-.greetings-section::before {
+.greetings-section__container::before {
   content: "";
   position: absolute;
   width: 675px;
