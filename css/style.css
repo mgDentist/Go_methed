@@ -15,6 +15,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
+  font-weight: 400;
   color: #FFFFFF;
   background-color: #1B1A1B;
 }
@@ -66,19 +67,26 @@ iframe {
   transform: scale(0);
 }
 
-.page-container {
-  min-width: 1440px;
-  padding: 0 130px;
-}
-
 .container {
-  max-width: 1180px;
+  width: 1440px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
 .section-feedback__container-inner {
+  width: 980px;
   padding-top: 60px;
-  padding-left: 100px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -106,15 +114,18 @@ iframe {
   margin-left: 60px;
 }
 
-.greetings-section__container {
-  position: relative;
-  max-width: 1180px;
-  min-height: 1018px;
-  padding-top: 146px;
-  margin: 0 auto;
+.greetings-section {
+  padding-top: 25px;
 }
 
-.greetings-title {
+.greetings-section__container {
+  position: relative;
+  margin: 0 auto;
+  min-height: 830px;
+
+}
+
+.greetings-section__title {
   margin: 0;
   font-weight: 900;
   font-size: 150px;
@@ -127,29 +138,136 @@ iframe {
   position: absolute;
   width: 675px;
   height: 762px;
-  right: 0;
-  bottom: 50px;
+  right: 140px;
+  top: 70px;
   background-image: url("../img/boy-vr.png");
   background-repeat: no-repeat;
   z-index: 1;
 }
 
-.greetings-subtitle {
+.greetings-section__container::after {
+  content: "";
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%);
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.greetings-section__subtitle {
   font-weight: 400;
   font-size: 28px;
   line-height: 50px;
   margin: 0;
+  margin-bottom: 30px;
   padding-left: 103px;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+.greetings-section__container-description {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.greetings-section__description {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 193px;
+}
+
+.greetings-section__span {
+  font-size: 30px;
+  line-height: 34px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
+}
+
+.greetings-section__span--modified {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #CD06FF;
+}
+
+.greetings-section__span--modified-2 {
+  font-size: 75px;
+  line-height: 106px;
+}
+
+.greetings-section__button {
+  min-width: 374px;
+  min-height: 80px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: #6c0287;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #6c0287;
+}
+
+.have-section__title {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.have-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.have-section__item {
+  min-width: 380px;
+  min-height: 228px;
+  padding-top: 166px;
+  padding-left: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.have-section__item--vr {
+  background-image: url("../img/wman-vr.jpg");
+}
+
+.have-section__item--audio {
+  background-image: url("../img/dj.jpg");
+}
+
+.have-section__item--karaoke {
+  background-image: url("../img/singing-lady.jpg");
+}
+
+.have-section__item--tables {
+  background-image: url("../img/table-games.jpg");
+}
+
+.have-section__item--cine {
+  background-image: url("../img/tv-netflix.jpg");
+}
+
+.have-section__item--ps5 {
+  background-image: url("../img/ps5.jpg");
+}
+
+.have-section__text {
+  max-width: 265px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+
 }
 
 .halls-list {
@@ -169,7 +287,8 @@ iframe {
 .halls-item {
   width: 580px;
   min-height: 349px;
-  padding: 135px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .halls-item--80 {
@@ -189,6 +308,7 @@ iframe {
 }
 
 .halls-link {
+  padding: 135px 30px;
   display: block;
   text-decoration: none;
   color: #FFFFFF;
@@ -197,10 +317,7 @@ iframe {
   line-height: 80px;
   text-transform: uppercase;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 
 .about-us__image-container {
   display: inline-block;
@@ -297,6 +414,18 @@ iframe {
   line-height: 28px;
 }
 
+.section-footer {
+  padding-bottom: 10px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.container-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 156px;
+}
+
 .section-footer__contacts-item {
   padding-left: 66px;
   text-decoration: none;
@@ -365,4 +494,15 @@ iframe {
 
 .section-footer__social-item:last-child {
   margin-right: 0;
+}
+
+.container-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-footer__rights {
+  width: 180px;
+  line-height: 1.5;
 }

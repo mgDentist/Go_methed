@@ -1,0 +1,124 @@
+.form__fieldset {
+    margin-bottom: 60px;
+    padding: 0;
+    border: none;
+}
+
+.form__fieldset--vertical {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 20px;
+}
+
+.form__fieldset--date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.form__legend {
+    display: flex;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.form__legend--little {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.form__button {
+    display: block;
+    min-width: 300px;
+    min-height: 60px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: 100px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6c0287;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+.hall-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.advertisment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 100px;
+}
+
+.date-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+    gap: 14px;
+}
+
+.name-container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contacts-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form__input {
+    display: none;
+}
+
+.form__field {
+    min-height: 52px;
+    padding: 0;
+    border: 0;
+}
+
+/* .form__field--short {
+    width: 134px;
+} */
+
+.form__label--halls {
+    min-width: 250px;
+    min-height: 55px;
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form__label--vertical {
+    font-size: 22px;
+    line-height: 25px;
+}
