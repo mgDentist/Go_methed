@@ -1,0 +1,94 @@
+.about-us__image-container {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.about-us__image {
+    display: block;
+}
+
+.about-us__description-wrapper {
+    display: inline-block;
+    width: 495px;
+    vertical-align: top;
+    margin-bottom: 48px;
+}
+
+.about-us__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.description-second {
+    margin-bottom: 48px;
+}
+
+.about-us__description-third {
+    position: relative;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 39px;
+    padding-left: 31px;
+}
+
+.about-us__description-third::before {
+    content: "“";
+    position: absolute;
+    width: 22px;
+    height: 19px;
+    left: 0;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    color: #6C0287;
+}
+
+.about-us__description-third::after {
+    content: "„";
+    position: absolute;
+    width: 22px;
+    height: 19px;
+    bottom: 55px;
+    right: 115px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 50px;
+    color: #6C0287;
+}
+
+.about-us__quotes:nth-child(1) {
+    margin-right: 16px;
+}
+
+.about-us__bloquote {
+    display: inline-block;
+    width: 500px;
+    margin: 0;
+}
+
+.about-us__picture {
+    display: inline-block;
+    margin: 0;
+    padding-left: 100px;
+}
+
+.about-us__img {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 30px;
+}
+
+.about-us__cite {
+    display: inline-block;
+    width: 280px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}

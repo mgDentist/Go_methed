@@ -1,0 +1,30 @@
+.section-feedback__container-inner {
+    width: 980px;
+    padding-top: 60px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.section-feedback__container-inner:last-child {
+    margin-bottom: 0;
+}
+
+.section-feedback__image {
+    border-radius: 50%;
+    float: left;
+    margin-top: -60px;
+    margin-bottom: 11px;
+    margin-right: 20px;
+}
+
+.section-feedback__description {
+    max-width: 980px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.section-feedback__description--no-float {
+    clear: left;
+    margin-left: 60px;
+}

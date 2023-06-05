@@ -1,0 +1,52 @@
+.have-section__title {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.have-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
+.have-section__item {
+    min-width: 380px;
+    min-height: 228px;
+    padding-top: 166px;
+    padding-left: 40px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.have-section__item--vr {
+    background-image: url("../img/wman-vr.jpg");
+}
+
+.have-section__item--audio {
+    background-image: url("../img/dj.jpg");
+}
+
+.have-section__item--karaoke {
+    background-image: url("../img/singing-lady.jpg");
+}
+
+.have-section__item--tables {
+    background-image: url("../img/table-games.jpg");
+}
+
+.have-section__item--cine {
+    background-image: url("../img/tv-netflix.jpg");
+}
+
+.have-section__item--ps5 {
+    background-image: url("../img/ps5.jpg");
+}
+
+.have-section__text {
+    max-width: 265px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}

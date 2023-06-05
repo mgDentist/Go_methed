@@ -172,21 +172,16 @@
             <fieldset class="form__fieldset form__fieldset--date">
               <legend class="form__legend">Выбери дату и время</legend>
               <div class="date-container">
-                <label for="date">Дата</label>
-                <input class="form__field form__field--short" type="date" name="date" id="date" required>
-
-                <label for="time">Время</label>
-                <input class="form__field form__field--short" type="time" name="time" id="time" required>
-
-                <label for="person">Сколько человек*</label>
-                <input class="form__field" type="number" name="person" id="person" required>
+                <label > <input class="form__field form__field--short" type="date" name="date" placeholder="Дата" required></label>
+                <label><input class="form__field form__field--short" type="time" name="time" placeholder="Время" required></label>
+                <label><input class="form__field" type="number" name="person" placeholder="Сколько человек" required></label>
               </div>
               <div class="name-container">
                 <label for="name">Имя</label>
-                <input class="form__field" type="text" name="name" id="name" required>
+                <input class="form__field form__field--medium" type="text" name="name" id="name" required>
 
                 <label for="surname">Фамилия*</label>
-                <input class="form__field" type="text" name="surname" id="surname" required>
+                <input class="form__field form__field--medium" type="text" name="surname" id="surname" required>
               </div>
               <div class="contacts-container">
                 <label for="tel">Телефон</label>
@@ -287,13 +282,14 @@
         <div class="container-footer-inner">
           <address class="section-footer__address">
             <ul class="section-footer__contacts-list">
-              <li class="section-footer__contacts-item item-adress">г. Москва, ул. Аквамарина, 16
+              <li class="section-footer__contacts-item section-footer__contacts-item--adress">г. Москва, ул. Аквамарина,
+                16
               </li>
-              <li class="section-footer__contacts-item item-tel">
-                <a class="contacts-link" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+              <li class="section-footer__contacts-item section-footer__contacts-item--tel">
+                <a class="section-footer__contacts-link" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
               </li>
-              <li class="section-footer__contacts-item item-mail">
-                <a class="contacts-link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+              <li class="section-footer__contacts-item section-footer__contacts-item--mail">
+                <a class="section-footer__contacts-link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
               </li>
             </ul>
             <ul class="section-footer__social-list">
@@ -348,7 +344,8 @@
         </div>
         <div class="container-footer-bottom">
           <p class="section-footer__rights">&copy; Game Over, 2022</p>
-          <p class="section-footer__rights">Design by Anastasia Ilina ilina9825@gmail.com</p>
+          <p class="section-footer__rights section-footer__rights--modify">Design by Anastasia Ilina ilina9825@gmail.com
+          </p>
         </div>
       </div>
     </footer>
