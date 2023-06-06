@@ -35,7 +35,7 @@
     background-image: url("../img/back-neon.svg");
 }
 
-.halls-link {
+.halls-section__halls-link {
     padding: 135px 30px;
     display: block;
     text-decoration: none;

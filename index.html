@@ -43,17 +43,18 @@
           <h2 class="greetings-section__title">GAME OVER</h2>
           <p class="greetings-section__subtitle">Новый формат игр и отдыха</p>
           <div class="greetings-section__container-description">
-            <p class="greetings-section__description">
-              <span class="greetings-section__span greetings-section__span--modified">4</span>
-              <span class="greetings-section__span">Тематических зала</span>
-            </p>
-            <p class="greetings-section__description">
-              <span
-                class="greetings-section__span greetings-section__span--modified greetings-section__span--modified-2">new</span>
-              <span class="greetings-section__span">Новейшая аппаратура</span>
-            </p>
+            <div class="greetings-section__description">
+              <p class="greetings-section__span greetings-section__span--modified">4</p>
+              <p class="greetings-section__span">Тематических зала</p>
+            </div>
+            <div class="greetings-section__description">
+              <p class="greetings-section__span greetings-section__span--modified greetings-section__span--modified-2">
+                new</p>
+              <p class="greetings-section__span">Новейшая аппаратура</p>
+            </div>
           </div>
           <button class="greetings-section__button button">Забронировать</button>
+          <a class="greetings-section__link" href="#"></a>
         </div>
       </section>
       <section class="have-section section">
@@ -88,20 +89,24 @@
           <h2 class="halls-section__halls-title halls-title title" id="halls">Наши залы</h2>
           <ol class="halls-section__halls-list halls-list">
             <li class="halls-section__halls-item halls-item halls-item--80">
-              <a class="halls-section__halls-link halls-link link-80" href="vibes.html"><span
-                  class="halls-link-meaning">80's vibes</span></a>
+              <a class="halls-section__halls-link" href="vibes.html">
+                <span class="halls-section__span">80's vibes</span>
+              </a>
             </li>
             <li class="halls-section__halls-item halls-item halls-item--sw">
-              <a class="halls-section__halls-link halls-link link-starwars" href="starwars.html"><span
-                  class="halls-link-meaning">Star Wars</span></a>
+              <a class="halls-section__halls-link" href="starwars.html">
+                <span class="halls-section__span">Star Wars</span>
+              </a>
             </li>
             <li class="halls-section__halls-item halls-item halls-item--ww">
-              <a class="halls-section__halls-link halls-link link-wildwest" href="wildwest.html"><span
-                  class="halls-link-meaning">Wild West</span></a>
+              <a class="halls-section__halls-link" href="wildwest.html">
+                <span class="halls-section__span">Wild West</span>
+              </a>
             </li>
             <li class="halls-section__halls-item halls-item halls-item--ln">
-              <a class="halls-section__halls-link halls-link link-neon" href="neon.html"><span
-                  class="halls-link-meaning">Neon Style</span></a>
+              <a class="halls-section__halls-link" href="neon.html">
+                <span class="halls-section__span">Neon Style</span>
+              </a>
             </li>
           </ol>
         </div>
@@ -113,16 +118,20 @@
             <fieldset class="form__fieldset">
               <legend class="form__legend">Выбери зал</legend>
               <div class="hall-container">
-                <input class="form__input" type="radio" name="cinema_hall" id="80_s_vibes" value="80_s_vibes">
+                <input class="visually-hidden form__input" type="radio" name="cinema_hall" id="80_s_vibes"
+                  value="80_s_vibes">
                 <label class="form__label form__label--halls" for="80_s_vibes">80's vibes</label>
 
-                <input class="form__input" type="radio" name="cinema_hall" id="star_wars" value="star_wars">
+                <input class="visually-hidden form__input" type="radio" name="cinema_hall" id="star_wars"
+                  value="star_wars">
                 <label class="form__label form__label--halls" for="star_wars">Star Wars</label>
 
-                <input class="form__input" type="radio" name="cinema_hall" id="wild_west" value="wild_west">
+                <input class="visually-hidden form__input" type="radio" name="cinema_hall" id="wild_west"
+                  value="wild_west">
                 <label class="form__label form__label--halls" for="wild_west">Wild West</label>
 
-                <input class="form__input" type="radio" name="cinema_hall" id="neon_style" value="neon_style">
+                <input class="visually-hidden form__input" type="radio" name="cinema_hall" id="neon_style"
+                  value="neon_style">
                 <label class="form__label form__label--halls" for="neon_style">Neon Style</label>
               </div>
             </fieldset>
@@ -132,39 +141,40 @@
                 <fieldset class="form__fieldset form__fieldset--vertical">
                   <legend class="form__legend form__legend--little">Приставка</legend>
                   <label class="form__label form__label--vertical">
-                    <input type="radio" name="game_console" value="play_station">
+                    <input class="form__checkbox" type="radio" name="game_console" value="play_station">
                     PlayStation</label>
                   <label class="form__label form__label--vertical">
-                    <input type="radio" name="game_console" value="sega_mega_drive">
+                    <input class="form__checkbox" type="radio" name="game_console" value="sega_mega_drive">
                     Sega Mega Drive</label>
                   <label class="form__label form__label--vertical">
-                    <input type="radio" name="game_console" value="x_box_one_s">
+                    <input class="form__checkbox" type="radio" name="game_console" value="x_box_one_s">
                     X Box One S</label>
                   <label class="form__label form__label--vertical">
-                    <input type="radio" name="game_console" value="dendy">
+                    <input class="form__checkbox" type="radio" name="game_console" value="dendy">
                     Dendy</label>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--vertical">
                   <legend class="form__legend form__legend--little">Настольные игры</legend>
-                  <label class="form__label form__label--vertical"><input type="checkbox" name="jenga">
+                  <label class="form__label form__label--vertical"><input class="form__checkbox" type="checkbox"
+                      name="jenga">
                     Jenga</label>
                   <label class="form__label form__label--vertical">
-                    <input type="checkbox" name="monopoly">
+                    <input class="form__checkbox" type="checkbox" name="monopoly">
                     Monopoly</label>
                   <label class="form__label form__label--vertical">
-                    <input type="checkbox" name="manchkin">
+                    <input class="form__checkbox" type="checkbox" name="manchkin">
                     Манчкин</label>
                   <label class="form__label form__label--vertical">
-                    <input type="checkbox" name="alias">
+                    <input class="form__checkbox" type="checkbox" name="alias">
                     Alias</label>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--vertical">
                   <legend class="form__legend form__legend--little">Дополнительно</legend>
                   <label class="form__label form__label--vertical">
-                    <input type="checkbox" name="karaoke">
+                    <input class="form__checkbox" type="checkbox" name="karaoke">
                     Караоке</label>
                   <label class="form__label form__label--vertical">
-                    <input type="checkbox" name="vr">
+                    <input class="form__checkbox" type="checkbox" name="vr">
                     VR</label>
                 </fieldset>
               </div>
@@ -172,9 +182,12 @@
             <fieldset class="form__fieldset form__fieldset--date">
               <legend class="form__legend">Выбери дату и время</legend>
               <div class="date-container">
-                <label > <input class="form__field form__field--short" type="date" name="date" placeholder="Дата" required></label>
-                <label><input class="form__field form__field--short" type="time" name="time" placeholder="Время" required></label>
-                <label><input class="form__field" type="number" name="person" placeholder="Сколько человек" required></label>
+                <label><input class="form__field form__field--short" type="date" name="date" placeholder="Дата"
+                    required></label>
+                <label><input class="form__field form__field--short" type="time" name="time" placeholder="Время"
+                    required></label>
+                <label><input class="form__field" type="number" name="person" placeholder="Сколько человек"
+                    required></label>
               </div>
               <div class="name-container">
                 <label for="name">Имя</label>
@@ -259,18 +272,28 @@
           <ul class="section-faq__main-questions">
             <li class="section-faq__element">
               <h3 class="section-faq__element-title">Можно ли забронировать комнату онлайн?</h3>
+              <button class="section-faq__button" type="button">
+              </button>
             </li>
-            <li class="section-faq__element">
+            <li class="section-faq__element section-faq__element--modify">
               <h3 class="section-faq__element-title">Могут ли мне вернуть деньги за бронь?</h3>
+              <button class="section-faq__button section-faq__button--modify" type="button">
+              </button>
             </li>
             <li class="section-faq__element">
               <h3 class="section-faq__element-title">Какая комната самая популярная?</h3>
+              <button class="section-faq__button" type="button">
+              </button>
             </li>
-            <li class="section-faq__element">
+            <li class="section-faq__element section-faq__element--modify">
               <h3 class="section-faq__element-title">Как получить VIP карту?</h3>
+              <button class="section-faq__button section-faq__button--modify" type="button">
+              </button>
             </li>
             <li class="section-faq__element">
               <h3 class="section-faq__element-title">Какая комната самая популярная?</h3>
+              <button class="section-faq__button" type="button">
+              </button>
             </li>
           </ul>
         </div>
@@ -344,12 +367,14 @@
         </div>
         <div class="container-footer-bottom">
           <p class="section-footer__rights">&copy; Game Over, 2022</p>
-          <p class="section-footer__rights section-footer__rights--modify">Design by Anastasia Ilina ilina9825@gmail.com
-          </p>
+          <a class="section-footer__rights section-footer__rights--modify" href="#">Design by Anastasia Ilina
+            ilina9825@gmail.com
+          </a>
         </div>
       </div>
     </footer>
   </div>
+  <script src="js/outline-safari.js"></script>
 </body>
 
 </html>

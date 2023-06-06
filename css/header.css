@@ -20,3 +20,14 @@
     border: 3px solid #CD06FF;
     border-radius: 10px;
 }
+
+.header__button:hover,
+.header__button:focus {
+    border-color: #6c0287;
+    background-color: #6c0287;
+}
+
+.header__button:active {
+    border: 1px solid #000000;
+    background-color: #640aa3;
+}

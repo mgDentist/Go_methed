@@ -49,8 +49,23 @@
     text-transform: uppercase;
     color: #6c0287;
     background-color: #ffffff;
-    border: none;
+    border: 3px solid #ffffff;
     border-radius: 10px;
+}
+
+.form__button:hover {
+    border: 3px solid #6c0287;
+    background-color: #eadeed;
+}
+.form__button:focus {
+    border: 3px solid #6c0287;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form__button:active {
+    border: 3px solid #eadeed;
+    background-color: #eadeed;
 }
 
 .hall-container {
@@ -93,15 +108,16 @@
     gap: 14px;
 }
 
-.form__input {
-    display: none;
-}
-
 .form__field {
     width: 300px;
     min-height: 52px;
     padding: 12px 50px 12px 20px;
-    border: 0;
+    border: 2px solid #ffffff;
+}
+
+.form__field:focus {
+    border: 2px solid #cd06ff;
+    outline: none;
 }
 
 .form__field--medium {
@@ -123,11 +139,37 @@
     text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.form__input:checked + .form__label--halls {
+    border: 3px solid #ffffff;
+    background-color: #6c0287;
+}
+
+.form__input:hover + .form__label--halls {
+    border: 3px solid #640aa3;
+    background-color: #eadeed;
+}
+
+.form__input:focus + .form__label--halls {
+    border: 3px solid #640aa3;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form__input:active + .form__label--halls{
+    border: 3px solid #ffffff;
+    background-color: #6c0287;
 }
 
 .form__label--vertical {
     font-size: 22px;
     line-height: 25px;
+}
+
+.form__checkbox:focus {
+    outline: 1px solid #cd06ff;
 }

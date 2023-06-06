@@ -28,20 +28,32 @@
     z-index: 1;
 }
 
-.greetings-section__container::after {
-    content: "";
+.greetings-section__link {
     position: absolute;
+    display: block;
     width: 97px;
     height: 97px;
-    left: 50%;
-    bottom: 15%;
-    transform: translate(-50%);
-    background-image: url("../img/tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    left: calc(50% - 97px / 2);
+    top: calc(80% - 97px / 2);
     border: 1px solid #ffffff;
     border-radius: 50%;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     z-index: 2;
+}
+
+.greetings-section__link:hover {
+    background-image: url("../img/tick-purple.svg");
+    background-color: #ffffff;
+}
+.greetings-section__link:focus {
+    outline: 1px solid #cd06ff;
+}
+.greetings-section__link:active {
+    border: 1px solid #cd06ff;
+    background-image: url("../img/tick.svg");
+    background-color: #cd06ff;
 }
 
 .greetings-section__subtitle {
@@ -55,7 +67,7 @@
 
 .greetings-section__container-description {
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     gap: 40px;
     margin-bottom: 150px;
 }
@@ -75,13 +87,12 @@
 .greetings-section__span--modified {
     font-weight: 900;
     font-size: 100px;
-    line-height: 141px;
+    line-height: 106px;
     color: #CD06FF;
 }
 
 .greetings-section__span--modified-2 {
     font-size: 75px;
-    line-height: 106px;
 }
 
 .greetings-section__button {
@@ -97,4 +108,13 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 10px #6c0287;
+}
+
+.greetings-section__button:hover,
+.greetings-section__button:focus {
+    background-color: #840aa3;
+}
+
+.greetings-section__button:active {
+    background-color: #640aa3;
 }

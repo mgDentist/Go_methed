@@ -64,11 +64,23 @@
 }
 
 .section-footer__svg:hover {
-    fill: #6C0287;
+    fill: #eadeed;
+}
+
+.section-footer__svg:focus {
+    fill: #eadeed;
+}
+
+.section-footer__svg:active {
+    fill: #cd06ff;
 }
 
 .section-footer__link {
     text-decoration: none;
+}
+
+.section-footer__link:focus {
+    outline: 1px solid #cd06ff;
 }
 
 .section-footer__social-item {
