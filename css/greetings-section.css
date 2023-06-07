@@ -41,15 +41,22 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     z-index: 2;
+    transition: background-image .3s ease-in-out,
+        background-color .3s ease-in-out,
+        border .3s ease-in-out,
+        outline .3s ease-in-out;
+
 }
 
 .greetings-section__link:hover {
     background-image: url("../img/tick-purple.svg");
     background-color: #ffffff;
 }
+
 .greetings-section__link:focus {
     outline: 1px solid #cd06ff;
 }
+
 .greetings-section__link:active {
     border: 1px solid #cd06ff;
     background-image: url("../img/tick.svg");

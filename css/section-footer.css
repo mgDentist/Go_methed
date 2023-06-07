@@ -63,6 +63,10 @@
     margin-bottom: 40px;
 }
 
+.section-footer__svg {
+    transition: fill .3s ease-in-out;
+}
+
 .section-footer__svg:hover {
     fill: #eadeed;
 }
@@ -77,6 +81,7 @@
 
 .section-footer__link {
     text-decoration: none;
+    transition: outline .3s ease-in-out;
 }
 
 .section-footer__link:focus {

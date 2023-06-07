@@ -51,12 +51,15 @@
     background-color: #ffffff;
     border: 3px solid #ffffff;
     border-radius: 10px;
+    transition: border .3s ease-in-out,
+        background-color .3s ease-in-out;
 }
 
 .form__button:hover {
     border: 3px solid #6c0287;
     background-color: #eadeed;
 }
+
 .form__button:focus {
     border: 3px solid #6c0287;
     background-color: #ffffff;
@@ -113,6 +116,7 @@
     min-height: 52px;
     padding: 12px 50px 12px 20px;
     border: 2px solid #ffffff;
+    transition: border .3s ease-in-out;
 }
 
 .form__field:focus {
@@ -142,25 +146,27 @@
     border: 3px solid #ffffff;
     border-radius: 8px;
     cursor: pointer;
+    transition: border .3s ease-in-out,
+        background-color .3s ease-in-out;
 }
 
-.form__input:checked + .form__label--halls {
+.form__input:checked+.form__label--halls {
     border: 3px solid #ffffff;
     background-color: #6c0287;
 }
 
-.form__input:hover + .form__label--halls {
+.form__input:hover+.form__label--halls {
     border: 3px solid #640aa3;
     background-color: #eadeed;
 }
 
-.form__input:focus + .form__label--halls {
+.form__input:focus+.form__label--halls {
     border: 3px solid #640aa3;
     background-color: #ffffff;
     outline: none;
 }
 
-.form__input:active + .form__label--halls{
+.form__input:active+.form__label--halls {
     border: 3px solid #ffffff;
     background-color: #6c0287;
 }
@@ -168,6 +174,10 @@
 .form__label--vertical {
     font-size: 22px;
     line-height: 25px;
+}
+
+.form__checkbox {
+    transition: outline .3s ease-in-out;
 }
 
 .form__checkbox:focus {

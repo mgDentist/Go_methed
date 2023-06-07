@@ -11,6 +11,8 @@
 
 .nav__link {
     padding: 10px 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .3s ease-in-out;
 }
 
 .nav__link:hover,

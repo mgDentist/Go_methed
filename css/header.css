@@ -3,7 +3,7 @@
     padding-bottom: 25px;
 }
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
 }
@@ -19,11 +19,13 @@
     background-color: transparent;
     border: 3px solid #CD06FF;
     border-radius: 10px;
+    transition: border .3s ease-in-out,
+        background-color .3s ease-in-out;
 }
 
 .header__button:hover,
 .header__button:focus {
-    border-color: #6c0287;
+    border: 1px solid #6c0287;
     background-color: #6c0287;
 }
 

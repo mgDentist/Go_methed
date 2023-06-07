@@ -11,13 +11,10 @@
 }
 
 .have-section__item {
-    min-width: 380px;
+    /* min-width: 380px;
     min-height: 228px;
     padding-top: 166px;
-    padding-left: 40px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding-left: 40px; */
 }
 
 .have-section__item--vr {
@@ -44,9 +41,20 @@
     background-image: url("../img/ps5.jpg");
 }
 
-.have-section__text {
-    max-width: 265px;
+.have-section__link {
+    display: block;
+    width: 380px;
+    min-height: 228px;
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 166px 40px 5px 40px;
+}
+
+.have-section__item:hover {
+    transform: scale(110%);
+    transition: transform .3s ease-in-out;
 }

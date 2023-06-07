@@ -40,6 +40,9 @@
   background-image: url("../img/plus-viol.svg");
   background-position: center;
   background-repeat: no-repeat;
+  transition: border-color .3s ease-in-out,
+    background-color .3s ease-in-out,
+    background-image .3s ease-in-out;
 }
 
 .section-faq__button:hover {
