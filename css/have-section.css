@@ -47,6 +47,10 @@
     padding: 166px 40px 5px 40px;
 }
 
+.have-section__item--modify {
+    transform: translateY(70px);
+}
+
 .have-section__item:hover {
     transform: scale(110%);
     transition: transform .3s ease-in-out;

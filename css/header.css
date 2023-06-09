@@ -15,7 +15,7 @@
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: var(--white);
     background-color: transparent;
     border: 3px solid var(--l-purple);
     border-radius: 10px;
