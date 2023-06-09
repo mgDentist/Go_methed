@@ -47,28 +47,28 @@
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #6c0287;
-    background-color: #ffffff;
-    border: 3px solid #ffffff;
+    color: var(--m-purple);
+    background-color: var(--white);
+    border: 3px solid var(--white);
     border-radius: 10px;
     transition: border .3s ease-in-out,
         background-color .3s ease-in-out;
 }
 
 .form__button:hover {
-    border: 3px solid #6c0287;
-    background-color: #eadeed;
+    border: 3px solid var(--m-purple);
+    background-color: var(--m-light);
 }
 
 .form__button:focus {
-    border: 3px solid #6c0287;
-    background-color: #ffffff;
+    border: 3px solid var(--m-purple);
+    background-color: var(--white);
     outline: none;
 }
 
 .form__button:active {
-    border: 3px solid #eadeed;
-    background-color: #eadeed;
+    border: 3px solid var(--m-light);
+    background-color: var(--m-light);
 }
 
 .hall-container {
@@ -115,12 +115,12 @@
     width: 300px;
     min-height: 52px;
     padding: 12px 50px 12px 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--white);
     transition: border .3s ease-in-out;
 }
 
 .form__field:focus {
-    border: 2px solid #cd06ff;
+    border: 2px solid var(--l-purple);
     outline: none;
 }
 
@@ -141,9 +141,9 @@
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-    border: 3px solid #ffffff;
+    color: var(--black);
+    background-color: var(--white);
+    border: 3px solid var(--white);
     border-radius: 8px;
     cursor: pointer;
     transition: border .3s ease-in-out,
@@ -151,24 +151,24 @@
 }
 
 .form__input:checked+.form__label--halls {
-    border: 3px solid #ffffff;
-    background-color: #6c0287;
+    border: 3px solid var(--white);
+    background-color: var(--m-purple);
 }
 
 .form__input:hover+.form__label--halls {
-    border: 3px solid #640aa3;
-    background-color: #eadeed;
+    border: 3px solid var(--d-purple);
+    background-color: var(--m-light);
 }
 
 .form__input:focus+.form__label--halls {
-    border: 3px solid #640aa3;
-    background-color: #ffffff;
+    border: 3px solid var(--d-purple);
+    background-color: var(--white);
     outline: none;
 }
 
 .form__input:active+.form__label--halls {
-    border: 3px solid #ffffff;
-    background-color: #6c0287;
+    border: 3px solid var(--white);
+    background-color: var(--m-purple);
 }
 
 .form__label--vertical {
@@ -181,5 +181,5 @@
 }
 
 .form__checkbox:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--l-purple);
 }

@@ -10,13 +10,6 @@
     gap: 30px 20px;
 }
 
-.have-section__item {
-    /* min-width: 380px;
-    min-height: 228px;
-    padding-top: 166px;
-    padding-left: 40px; */
-}
-
 .have-section__item--vr {
     background-image: url("../img/wman-vr.jpg");
 }

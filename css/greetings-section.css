@@ -35,7 +35,7 @@
     height: 97px;
     left: calc(50% - 97px / 2);
     top: calc(80% - 97px / 2);
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white);
     border-radius: 50%;
     background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
@@ -50,17 +50,17 @@
 
 .greetings-section__link:hover {
     background-image: url("../img/tick-purple.svg");
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .greetings-section__link:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--l-purple);
 }
 
 .greetings-section__link:active {
-    border: 1px solid #cd06ff;
+    border: 1px solid var(--l-purple);
     background-image: url("../img/tick.svg");
-    background-color: #cd06ff;
+    background-color: var(--l-purple);
 }
 
 .greetings-section__subtitle {
@@ -95,7 +95,7 @@
     font-weight: 900;
     font-size: 100px;
     line-height: 106px;
-    color: #CD06FF;
+    color: var(--l-purple);
 }
 
 .greetings-section__span--modified-2 {
@@ -110,18 +110,18 @@
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #ffffff;
-    background-color: #6c0287;
+    color: var(--white);
+    background-color: var(--m-purple);
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px #6c0287;
+    box-shadow: 0 0 10px var(--m-purple);
 }
 
 .greetings-section__button:hover,
 .greetings-section__button:focus {
-    background-color: #840aa3;
+    background-color: var(--purple);
 }
 
 .greetings-section__button:active {
-    background-color: #640aa3;
+    background-color: var(--d-purple);
 }

@@ -14,8 +14,8 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-color: #fff;
-  color: #1C1A1A;
+  background-color: var(--white);
+  color: var(--m-black);
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
@@ -27,14 +27,14 @@
 }
 
 .section-faq__element--modify {
-  background-color: #440F51;
-  color: #fff;
+  background-color: var(--violet);
+  color: var(--white);
 }
 
 .section-faq__button {
   width: 46px;
   height: 46px;
-  border: 2px solid #440f51;
+  border: 2px solid var(--violet);
   border-radius: 50%;
   background-color: transparent;
   background-image: url("../img/plus-viol.svg");
@@ -46,25 +46,25 @@
 }
 
 .section-faq__button:hover {
-  border-color: #6c0287;
-  background-color: #6c0287;
+  border-color: var(--m-purple);
+  background-color: var(--m-purple);
   background-image: url("../img/plus-white.svg")
 }
 
 .section-faq__button:active {
-  border-color: #6c0287;
+  border-color: var(--m-purple);
   background-color: transparent;
   background-image: url("../img/minus-viol.svg");
 }
 
 .section-faq__button--modify {
-  border-color: #ffffff;
+  border-color: var(--white);
   background-image: url("../img/plus-white.svg");
 }
 
 .section-faq__button--modify:hover {
-  border-color: #ffffff;
-  background-color: #ffffff;
+  border-color: var(--white);
+  background-color: var(--white);
   background-image: url("../img/plus-viol.svg");
 }
 

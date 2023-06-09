@@ -1,6 +1,6 @@
 .section-footer {
     padding-bottom: 10px;
-    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+    background: linear-gradient(180deg, var(--d-violet) 0%, var(--m-violet) 100%);
 }
 
 .container-footer-inner {
@@ -17,7 +17,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--white);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -54,7 +54,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .section-footer__social-list {
@@ -68,15 +68,15 @@
 }
 
 .section-footer__svg:hover {
-    fill: #eadeed;
+    fill: var(--m-light);
 }
 
 .section-footer__svg:focus {
-    fill: #eadeed;
+    fill: var(--m-light);
 }
 
 .section-footer__svg:active {
-    fill: #cd06ff;
+    fill: var(--l-purple);
 }
 
 .section-footer__link {
@@ -85,7 +85,7 @@
 }
 
 .section-footer__link:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--l-purple);
 }
 
 .section-footer__social-item {

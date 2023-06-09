@@ -39,7 +39,7 @@
     padding: 135px 30px;
     display: block;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 700;
     font-size: 70px;
     line-height: 80px;

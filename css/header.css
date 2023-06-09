@@ -15,9 +15,9 @@
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--main-color);
     background-color: transparent;
-    border: 3px solid #CD06FF;
+    border: 3px solid var(--l-purple);
     border-radius: 10px;
     transition: border .3s ease-in-out,
         background-color .3s ease-in-out;
@@ -25,11 +25,11 @@
 
 .header__button:hover,
 .header__button:focus {
-    border: 1px solid #6c0287;
-    background-color: #6c0287;
+    border: 1px solid var(--m-purple);
+    background-color: var(--m-purple);
 }
 
 .header__button:active {
-    border: 1px solid #000000;
-    background-color: #640aa3;
+    border: 1px solid var(--black);
+    background-color: var(--d-purple);
 }
